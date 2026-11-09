@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "604780731332",
+    "project_id": "centro-psicologico-android",
+    "storage_bucket": "centro-psicologico-android.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:604780731332:android:84542c6fdde597cc2fa291",
+        "android_client_info": {
+          "package_name": "com.example.centropsicologico"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAoQLtxxsgLYnOJ3u2SX6xwmLPAjvVSdxo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
