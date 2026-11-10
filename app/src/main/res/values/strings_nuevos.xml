@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Pegá estos strings dentro de <resources> de tu strings.xml (o dejá este archivo tal cual). -->
+<resources>
+    <!-- Registro -->
+    <string name="registro_titulo">Crear cuenta</string>
+    <string name="hint_nombre">Nombre y apellido</string>
+    <string name="hint_ciudad">Ciudad (opcional)</string>
+    <string name="hint_telefono">Teléfono (opcional)</string>
+    <string name="hint_matricula">Matrícula</string>
+    <string name="hint_especialidad">Especialidad</string>
+    <string name="rol_paciente">Paciente</string>
+    <string name="rol_profesional">Profesional</string>
+    <string name="btn_crear_cuenta">Crear cuenta</string>
+    <string name="registro_error_nombre">Ingresá tu nombre</string>
+    <string name="registro_error_telefono">Ingresá un teléfono válido</string>
+    <string name="registro_error_matricula">Ingresá tu matrícula</string>
+    <string name="registro_error_especialidad">Ingresá tu especialidad</string>
+    <string name="msg_cuenta_creada">Cuenta creada. Ya podés ingresar.</string>
+
+    <!-- Login / errores generales -->
+    <string name="login_firebase_clave_distinta">Tu cuenta de acceso ya existe con otra contraseña.</string>
+    <string name="error_respuesta_invalida">La respuesta del servidor no es válida</string>
+
+    <!-- Historias clínicas -->
+    <string name="main_btn_historias">Historias clínicas</string>
+    <string name="historias_titulo">Historias clínicas</string>
+    <string name="btn_nueva_nota">Nueva nota</string>
+    <string name="historias_vacio">Todavía no hay notas registradas.</string>
+    <string name="historia_item_formato">%1$s\n%2$s\n\n%3$s</string>
+    <string name="nota_titulo">Nueva nota clínica</string>
+    <string name="nota_label_paciente">Paciente</string>
+    <string name="hint_nota">Escribí la nota clínica</string>
+    <string name="btn_guardar_nota">Guardar nota</string>
+    <string name="nota_error_vacia">La nota no puede estar vacía</string>
+    <string name="nota_sin_pacientes">Todavía no tenés turnos con pacientes, así que no se pueden registrar notas.</string>
+    <string name="msg_nota_guardada">Nota guardada</string>
+</resources>

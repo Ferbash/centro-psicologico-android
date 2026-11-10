@@ -1,53 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/raiz"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp">
 
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="12dp">
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Mis Turnos Médicos"
-            android:textSize="22sp"
+            android:layout_weight="1"
+            android:text="@string/main_titulo"
+            android:textSize="20sp"
             android:textStyle="bold" />
 
         <Button
             android:id="@+id/btnCerrarSesion"
-            style="?attr/materialButtonOutlinedStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:text="Cerrar Sesión" />
-    </RelativeLayout>
+            android:text="@string/main_btn_cerrar_sesion" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSolicitarTurno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/main_btn_solicitar" />
+
+    <Button
+        android:id="@+id/btnHistorias"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/main_btn_historias" />
 
     <ProgressBar
         android:id="@+id/pbCargando"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
+        android:layout_gravity="center_horizontal"
         android:visibility="gone" />
 
     <TextView
         android:id="@+id/tvEstadoApi"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="@android:color/holo_red_dark"
-        android:textSize="14sp"
-        android:visibility="gone"
-        android:layout_marginBottom="8dp" />
+        android:layout_marginTop="8dp"
+        android:visibility="gone" />
 
     <ListView
         android:id="@+id/lvTurnos"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
-        android:divider="@android:color/darker_gray"
-        android:dividerHeight="1dp" />
-
+        android:layout_marginTop="8dp"
+        android:layout_weight="1" />
 </LinearLayout>

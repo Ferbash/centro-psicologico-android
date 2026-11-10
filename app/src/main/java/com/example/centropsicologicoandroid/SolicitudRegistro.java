@@ -1,5 +1,9 @@
 package com.example.centropsicologicoandroid;
 
+/**
+ * Cuerpo de POST registrar.php. matricula y especialidad solo se mandan
+ * para el rol "profesional" (si son null, Gson no los incluye en el JSON).
+ */
 public class SolicitudRegistro {
     private final String nombre;
     private final String email;
@@ -7,37 +11,18 @@ public class SolicitudRegistro {
     private final String ciudad;
     private final String rol;
     private final String telefono;
+    private final String matricula;
+    private final String especialidad;
 
-    public SolicitudRegistro(String nombre, String email, String password, String ciudad, String rol, String telefono) {
+    public SolicitudRegistro(String nombre, String email, String password, String ciudad,
+                             String rol, String telefono, String matricula, String especialidad) {
         this.nombre = nombre;
         this.email = email;
         this.password = password;
         this.ciudad = ciudad;
         this.rol = rol;
         this.telefono = telefono;
-    }
-
-    public String getNombre() {
-        return nombre;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public String getCiudad() {
-        return ciudad;
-    }
-
-    public String getRol() {
-        return rol;
-    }
-
-    public String getTelefono() {
-        return telefono;
+        this.matricula = matricula;
+        this.especialidad = especialidad;
     }
 }

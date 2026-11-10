@@ -2,28 +2,47 @@
     <string name="app_name">Centro Psicológico Integral</string>
 
     <!-- Login -->
-    <string name="titulo_login">Ingresar al Centro</string>
-    <string name="sub_login">Inicia sesión con tu correo y contraseña</string>
     <string name="hint_email">Correo electrónico</string>
     <string name="hint_clave">Contraseña</string>
     <string name="btn_ingresar">Ingresar</string>
     <string name="btn_registrarme">Crear cuenta</string>
-    <string name="btn_salir">Cerrar Sesión</string>
 
-    <!-- Turnos -->
-    <string name="titulo_turnos">Mis Turnos</string>
-    <string name="titulo_solicitar_turno">Solicitar Turno</string>
-    <string name="hint_profesional">ID del Profesional</string>
-    <string name="hint_fecha_hora">Fecha y Hora (AAAA-MM-DD HH:MM)</string>
-    <string name="btn_solicitar">Solicitar Turno</string>
-    <string name="btn_confirmar">Confirmar Turno</string>
-    <string name="btn_cancelar">Volver</string>
-
-    <!-- Estado API / Errores -->
-    <string name="error_obtener_token">Error al obtener el token de usuario.</string>
-    <string name="error_usuario_no_autenticado">Usuario no autenticado.</string>
-    <string name="error_cargar_turnos">Error al cargar turnos (Código: %1$d)</string>
-    <string name="error_conexion_servidor">Sin conexión con el servidor en Render.</string>
+    <!-- Lista de turnos -->
     <string name="info_turno_formato">Turno #%1$d - %2$s\nEstado: %3$s</string>
     <string name="no_hay_turnos">No tienes turnos registrados.</string>
+
+    <!-- Pantalla principal -->
+    <string name="main_titulo">Mis Turnos Psicologicos</string>
+    <string name="main_btn_cerrar_sesion">Cerrar Sesión</string>
+    <string name="main_btn_solicitar">Solicitar turno</string>
+    <string name="turno_paciente_label">Paciente: %1$s</string>
+    <string name="turno_profesional_label">Profesional: %1$s</string>
+    <string name="turno_alternativo_label">Horario alternativo propuesto: %1$s</string>
+    <string name="dialogo_elegir_profesional">Elegí un profesional</string>
+    <string name="msg_sin_profesionales">No hay profesionales disponibles</string>
+    <string name="msg_sin_conexion">Sin conexión con el servidor</string>
+    <string name="msg_turno_solicitado">Turno solicitado</string>
+    <string name="msg_fecha_futura">Elegí una fecha y hora futuras</string>
+    <string name="error_codigo">Error %1$d</string>
+
+    <!-- Detalle de turno -->
+    <string name="detalle_titulo">Turno #%1$d</string>
+    <string name="detalle_fecha">Fecha solicitada: %1$s</string>
+    <string name="detalle_estado">Estado: %1$s</string>
+    <string name="btn_aceptar_turno">Aceptar turno</string>
+    <string name="btn_proponer_horario">Proponer otro horario</string>
+    <string name="btn_cancelar_turno">Cancelar turno</string>
+    <string name="btn_eliminar_turno">Eliminar turno</string>
+    <string name="btn_eliminar_confirmar">Eliminar</string>
+    <string name="btn_volver">Volver</string>
+    <string name="msg_turno_actualizado">Turno actualizado</string>
+    <string name="dialogo_eliminar_titulo">Eliminar turno</string>
+    <string name="dialogo_eliminar_mensaje">¿Seguro que querés eliminar este turno?</string>
+
+    <!-- Validaciones de login -->
+    <string name="login_error_correo">Ingrese un correo válido</string>
+    <string name="login_error_password">La contraseña debe tener al menos 8 caracteres</string>
+    <string name="login_error_generico">Error: %1$s</string>
+    <string name="login_desconocido">Desconocido</string>
+    <string name="login_sin_conexion">Sin conexión con el servidor en Render.</string>
 </resources>
